@@ -1,18 +1,4 @@
 @charset "UTF-8";
-.container{
-	overflow: auto;
-	scroll-snap-type: y mandatory;
-	height: 100vh;
-	font-family: 'GmarketSansMedium';
-}
-
-section{
-	scroll-snap-align: start;
-	height: 101vh;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
 
 header{
 	scroll-snap-align: start;
@@ -24,6 +10,74 @@ header{
 }
 
 header h1{
-	font-size: 20rem;
+	font-size: 15rem;
 	text-align: center;
-	color: brown;}
+	color: #996b5c;
+	margin: 0 0 30rem 0;}
+	
+.circle{display: flex;
+		width:100%;
+		justify-content: space-between;}
+.circle_img{display: flex;
+			flex-direction: column;}
+.circle_img h6{padding-left: 1.2rem; color:white;}			
+
+	
+.circle img{border-radius: 50%;
+			width: 8rem;
+			height: 8rem;
+			border: 0.5rem solid #996b5c;}
+
+
+
+.container{
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+	height: 100vh;
+}
+
+section{
+	scroll-snap-align: center;
+	height: 101vh;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	scroll-snap-align: end;
+	background: #996b5c;
+	text-align: center;
+	padding: 3rem;
+	height: 20vh;
+}
+footer ul{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+footer li{margin: 0 12px;}
+footer a{color: #fff;}
+footer a:hover{color: #c7c3ba;}
+footer small{color:#c7c3ba; font-size: .875rem;}
