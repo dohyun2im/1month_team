@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 header{
 	scroll-snap-align: start;
 	height: 101vh;
@@ -8,28 +7,29 @@ header{
 	background-repeat: no-repeat;
 	background-image: url("../img/main.png");
 }
-
 header h1{
 	font-size: 15rem;
 	text-align: center;
 	color: #996b5c;
-	margin: 0 0 30rem 0;}
-	
+	margin: 0 0 30rem 0;}	
 .circle{display: flex;
 		width:100%;
 		justify-content: space-between;}
 .circle_img{display: flex;
-			flex-direction: column;}
-.circle_img h6{padding-left: 1.2rem; color:white;}			
-
-	
+			flex-direction: column;}	
 .circle img{border-radius: 50%;
 			width: 8rem;
 			height: 8rem;
 			border: 0.5rem solid #996b5c;}
+.circle_img h6{color:white;}
+.tarr{position:relative; left: 0.2rem;}
+.pie{position:relative; left: 1rem;}
 
 
-
+.over{position:relative; right: 0.2rem;}
+.stay{position:relative; left: 1.2rem;}
+.haha{position:relative; left: 0.3rem;}
+.hwa{position:relative; left: 1.5rem;}
 .container{
 	overflow: auto;
 	scroll-snap-type: y mandatory;
@@ -60,10 +60,10 @@ section{
 
 
 
-
-
-
-
+.fa-twitter{color:#1c9cea;}
+.fa-facebook{color:#1773ea;}
+.fa-youtube{color:#f31c1b;}
+.fa-square-instagram{color:#fb007f;}
 
 footer{
 	scroll-snap-align: end;
@@ -75,7 +75,7 @@ footer{
 footer ul{
 	display: flex;
 	justify-content: center;
-	margin-bottom: 1rem;
+	margin: 0.7rem 0 1rem 0;
 }
 footer li{margin: 0 12px;}
 footer a{color: #fff;}
