@@ -43,21 +43,33 @@ section{
 	background-position: center center;
 	background-repeat: no-repeat;
 }
+/*제목---------------------------------------------------*/
+h1{
+	font-size: 5rem;
+	text-align: left;
+	color: #996b5c;
+	height: 10vh;
+	background-color: black;
+}
+/*seven.diddid-------------------------------------------*/
 
+.diddid {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 0% 0% 78% 7%;
+}
+.diddid img{width: 30vw; padding: 10px; border-radius: 50%;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.diddid p{  
+	font-size: 20px; font-weight: bold;
+	line-height: 50px;
+	color: #996b5c;
+	}
+/*eight.dlscjs-------------------------------------------*/
+.dlscjs{display: flex; justify-content: center; background-color: black;}
+.dlscjs img{width: 30vw; padding: 10px; border-radius: 94px;}
+.dlscjs p{font-size: 20px; font-weight: bold; line-height: 50px; color: white;} 
 
 
 .fa-twitter{color:#1c9cea;}
