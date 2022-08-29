@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
 .allcontainer{
-	overflow: auto;
-	scroll-snap-type: y mandatory;
 	height: 100vh;
+	scroll-snap-type: y mandatory;
 }
-header{scroll-snap-align: start;}
-footer{scroll-snap-align: end;}
-section{scroll-snap-align: center;}
+header{scroll-snap-align:start;}
+section{scroll-snap-align:center;}
+footer{scroll-snap-align:end;}
 section , header , footer{
 	width:1400px;
 	margin:0 auto;
@@ -35,8 +34,6 @@ header h1{
 			height: 8rem;
 			border: 0.5rem solid #996b5c;}
 .circle_img h6{color:white;}
-
-
 .title{display: flex; color:white; justify-content:space-around;}
 .title h6{position: relative;}
 .camel{left: 0.5rem;}
