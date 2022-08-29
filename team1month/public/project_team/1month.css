@@ -46,10 +46,64 @@ header h1{
 .haha{left: -2rem;}
 .hwa{left: -1rem;}
 
+/*--------------------------------------------------------------------  */
+.photo{
+	display: flex;
+	background-color: black;
+	border-radius: 98px;
+}
+
+.photo img {
+display: flex;
+height: 869px;
+width: 37%;
+margin: 2px;
+border-radius: 94px;
+padding-top: 20px;
+
+}
+.over{
+	color: white;
+	padding: 14px 12px;
+	line-height: 409%;
+}
+h1{
+	color:chocolate;
+   height: 10vh;
+   font-size: 5rem;
+   text-align: left;
+
+}
+.five{
+	background-color: black;
+	border-radius: 50%;
+}
+/*--------------------------------------------------  */
+.photo_2{
+	display: flex;
+}
+.six_border{
+	border-bottom: 1px solid black;
+	border-radius: 50%;
+}
 
 
-
-
+.photo_2 img{
+	height: 869px;
+	width: 37%;
+	margin: 2px;
+	border-radius: 94px;
+	padding-top: 20px;
+}
+.over2{
+	color: black;
+	padding: 14px 12px;
+	line-height: 538%;
+}
+hr{
+ border-bottom:20px; 
+	
+}
 
 
 
