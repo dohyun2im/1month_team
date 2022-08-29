@@ -1,20 +1,33 @@
 @charset "UTF-8";
-header{
-	scroll-snap-align: start;
+
+.allcontainer{
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+	height: 100vh;
+}
+header{scroll-snap-align: start;}
+footer{scroll-snap-align: end;}
+section{scroll-snap-align: center;}
+section , header , footer{
+	width:1400px;
+	margin:0 auto;
 	height: 101vh;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+
+header{
 	background-image: url("../img/main.png");
 }
 header h1{
 	font-size: 15rem;
 	text-align: center;
 	color: #996b5c;
-	margin: 0 0 30rem 0;}	
+	margin: 0 0 5rem 0;}	
 .circle{display: flex;
 		width:100%;
-		justify-content: space-between;}
+		justify-content: space-around;}
 .circle_img{display: flex;
 			flex-direction: column;}	
 .circle img{border-radius: 50%;
@@ -22,28 +35,16 @@ header h1{
 			height: 8rem;
 			border: 0.5rem solid #996b5c;}
 .circle_img h6{color:white;}
-.tarr{position:relative; left: 0.2rem;}
-.pie{position:relative; left: 1rem;}
 
 
-.over{position:relative; right: 0.2rem;}
-.stay{position:relative; left: 1.2rem;}
-.haha{position:relative; left: 0.3rem;}
-.hwa{position:relative; left: 1.5rem;}
-.container{
-	overflow: auto;
-	scroll-snap-type: y mandatory;
-	height: 100vh;
-}
-
-section{
-	scroll-snap-align: center;
-	height: 101vh;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
+.title{display: flex; color:white; justify-content:space-around;}
+.title h6{position: relative;}
+.camel{left: 0.5rem;}
+.fire{left: -1.5rem;}
+.over{left: -3.5rem;}
+.stay{left: -3rem;}
+.haha{left: -2rem;}
+.hwa{left: -1rem;}
 
 
 
@@ -66,7 +67,6 @@ section{
 .fa-square-instagram{color:#fb007f;}
 
 footer{
-	scroll-snap-align: end;
 	background: #996b5c;
 	text-align: center;
 	padding: 3rem;
