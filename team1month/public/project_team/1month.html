@@ -11,38 +11,90 @@
 <body>
 <div class="allcontainer">
 	<header>
-		<h1 id="main">1Day , 1Coffee </h1>
+		<h1>1Day , 1Coffee </h1>
 		<div class="circle">
-			<div class="circle_img"><img id="img1" src="../img/Sum Tarr.jpg"> </div>
-			<div class="circle_img"><img id="img2" src="../img/kkoala_pie.jpg"></div>
-			<div class="circle_img"><img id="img3" src="../img/camel.jfif"></div>
-			<div class="circle_img"><img id="img4" src="../img/fire.png"></div>
-			<div class="circle_img"><img id="img5" src="../img/overfilled coffee.jpg"></div>
-			<div class="circle_img"><img id="img6" src="../img/forestbay.jpg"></div>
-			<div class="circle_img"><img id="img7" src="../img/hahafarmstay.jpg"></div>
-			<div class="circle_img"><img id="img8" src="../img/onhwa.jpg"></div>
-		</div>
-		<div class="title">
-			<h6 class="tarr">@Cafe_sum_Tarr</h6>
-			<h6 class="pie">@Kkoala_pie</h6>
-			<h6 class="camel">@CamelCoffee</h6>
-			<h6 class="fire">@NoSmokeWithoutFire</h6>
-			<h6 class="over">@overfilled_coffee</h6>
-			<h6 class="stay">@Forestay</h6>
-			<h6 class="haha">@Hahafarmstay</h6>
-			<h6 class="hwa">@On_Hwa</h6>
+			<div class="circle_img"><img src="../img/Sum Tarr.jpg"><h6 class="tarr">@Cafe_sum_Tarr</h6></div>
+			<div class="circle_img"><img src="../img/kkoala_pie.jpg"><h6 class="pie">@Kkoala_pie</h6></div>
+			<div class="circle_img"><img src="../img/main.png"><h6>@abccoffee</h6></div>
+			<div class="circle_img"><img src="../img/main.png"><h6>@abccoffee</h6></div>
+			<div class="circle_img"><img src="../img/overfilled coffee.jpg"><h6 class="over">@overfilled_coffee</h6></div>
+			<div class="circle_img"><img src="../img/forestbay.jpg"><h6 class="stay">@Forestbay</h6></div>
+			<div class="circle_img"><img src="../img/hahafarmstay.jpg"><h6 class="haha">@Hahafarmstay</h6></div>
+			<div class="circle_img"><img src="../img/onhwa.jpg"><h6 class="hwa">@On_Hwa</h6></div>
 		</div>
 	</header>
-	
-	<section class="one"><div id='back'>@</div></section>
-	<section class="two">1</section>
-	<section class="three">1</section>
-	<section class="four">1</section>
-	<section class="five">1</section>
-	<section class="six">1</section>
-	<section class="seven">1</section>
-	<section class="eight">h</section>
-	
+	<div class="container">
+		<section class="one"></section>
+		<section class="two"></section>
+		<section class="three"></section>
+		<section class="four"></section>
+		<section class="five"></section>
+		<section class="six"></section>
+		<section class="seven">
+			<!--  이미지 슬라이드 -->
+			<div class="section">
+				<input type="radio" name="slide" id="slide01" checked>
+				<input type="radio" name="slide" id="slide02">
+				<input type="radio" name="slide" id="slide03">
+		
+				<div class="slidewrap">
+					<ul class="slidelist">
+						<li>
+							<a>
+								<label for="slide03" class="left"></label>
+								<img src="../img/부산_커피.jpg">
+								<label for="slide02" class="right"></label>
+							</a>
+						</li>
+						<li>
+							<a>
+								<label for="slide01" class="left"></label>
+								<img src="../img/부산_빵.jpg">
+								<label for="slide03" class="right"></label>
+							</a>
+						</li>
+						<li>
+							<a>
+								<label for="slide02" class="left"></label>
+								<img src="../img/부산_커피.jpg">
+								<label for="slide01" class="right"></label>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--  이미지 슬라이드 -->
+		
+		</section>
+		<section class="eight">
+			<div class="tjdqnr">
+				<img alt="" src="../img/성북구_배경.jpg">
+				<img alt="" src="../img/성북구_커피.jpg" >
+				<p>
+					⛄ 플랜터247 ⛄
+					<br>
+					카페와 바를 모두 운영 중이어서 커피 한잔 혹은
+					<br>
+					술 한잔이 생각날 때 기분 전환 할 수 있는 곳이랍니다 :)
+					<br>
+					시끄러운 일상 속 조용한 쉼터가 필요하신다면
+					<br>
+					성신여대에 위치한 플랜터 247에 방문하셔서
+					<br>
+					기분 전환 100% 제대로 하고 가세요!
+					📋 추천 메뉴
+					<br>
+					- 커스텀 아인슈페너 5.7
+					<br>
+					- 딥 초콜릿 모카 6.7
+					<br>
+					다크초콜릿과 에스프레소 그리고 가니쉬로 올라가는
+					<br>
+					딥 초콜릿과 리얼초코에 퐁당
+				</p>
+			</div>
+		</section>
+	</div>
 	<footer>
 		<ul class = 'footer_nav'>
 			<li><i class="fa-brands fa-twitter"></i><a href="https://twitter.com">Twitter</a></li>
@@ -54,7 +106,5 @@
 		<p><small>KimWonjong , Kimdohyun , Choiyujung , Koeunsee</small></p>
 	</footer>
 </div>
-<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="1month.js"></script>
 </body>
 </html>

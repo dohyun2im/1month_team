@@ -1,8 +1,36 @@
 @charset "UTF-8";
 
+/* 슬라이드 */
+
+	/* 브라우저 마진과 패딩 리셋 */
+	* {margin:0;padding:0;}
+
+	/* INPUT 가리기 */
+	.section input[id*="slide"] {display:none;}
+
+	/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+	.section .slidewrap {max-width:1200px;margin:0 auto;overflow:hidden;}
+	.section .slidelist {white-space:nowrap;font-size:0;}
+	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+	.section .slidelist > li > a {display:block;position:relative;}
+	.section .slidelist > li > a img {width:100%;}
+
+	/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+	.section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+	.section .slidelist .left {left:30px;background:url('left.png') center center / 100% no-repeat;}
+	.section .slidelist .right {right:30px;background:url('right.png') center center / 100% no-repeat;}
+
+	/* INPUT 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+
+/*------------------*/
 .allcontainer{
-	height: 100vh;
+	overflow:auto;
 	scroll-snap-type: y mandatory;
+	height: 100vh;
 }
 header{scroll-snap-align:start;}
 section{scroll-snap-align:center;}
@@ -42,27 +70,32 @@ header h1{
 .stay{left: -3rem;}
 .haha{left: -2rem;}
 .hwa{left: -1rem;}
+/*기본--------------------------------------------------------------*/
+p{font-size: 20px; font-weight: bold; line-height: 60px;}
+/*seven.qntks-------------------------------------------*/
+.qntks {
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    width: 100%;
+}
+.Qkd{width: 30vw; height: auto; margin: auto;}
+
+.zjvl{
+	width: 30vw; height:auto; padding: 5px; 
+	 margin: auto; }
+	
+p{font-size: 20px; font-weight: bold;}
+
+.fkdnswl{ color: #432614; }
+
+/*eight.tjdqnr-------------------------------------------*/
+.tjdqnr{
+	display: flex; justify-content: center; background-color: #55565e;
+	height: 45vw;}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.fa-twitter{color:#1c9cea;}
-.fa-facebook{color:#1773ea;}
-.fa-youtube{color:#f31c1b;}
-.fa-square-instagram{color:#fb007f;}
-
+/*-------------------------------------------------------------*/
 footer{
 	background: #996b5c;
 	text-align: center;
