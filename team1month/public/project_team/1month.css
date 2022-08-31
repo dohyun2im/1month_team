@@ -35,20 +35,18 @@
 
 /*------------------header--------------------------*/
 #back1{
-   font-weight: bold;
+   font-weight:bold;
+   border-radius: 50%;
+   width: 8rem;
+   height: 8rem;
+   border: 0.5rem solid #c1e4f7;
    position: fixed;
-   bottom: 2rem;
+   bottom: 2.5rem;
    right: 12rem;
-   z-index: 100;
 }
 
-.allcontainer{
-	height: 100vh;
-	scroll-snap-type: y mandatory;
-}
-header{scroll-snap-align:start;}
-section{scroll-snap-align:center; position: relative;}
-footer{scroll-snap-align:end;}
+.allcontainer{height: 100vh;}
+section{position: relative;}
 
 section , header , footer{
 	width:1200px;
@@ -114,7 +112,7 @@ header h1{
 	top:250px;
 
 }
-.위치 h2{font-size: 1.3rem;}
+.위치 h2{ font-size: 1rem; font-weight: normal;}
 .제목{
 	position:absolute;
 	top: 50px;
@@ -137,7 +135,7 @@ header h1{
 	height: 140px;
 	background-image: url("../img/체크.jpg");
 	box-shadow: 0 0 0 2px #dccbc5;
-	padding: 20px;
+	padding: 40px 20px 20px 20px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -492,10 +490,25 @@ header h1{
 	-webkit-text-stroke: 1px gray;
 	
 }
-.nosmokecontent1{
+.은시7메뉴{
+	position: absolute;
+	left: 850px;
+	width: 250px;
+	height: 700px;
+	padding:1rem;
 	background-image: url("../img/은시패턴.jpg");
-	font-size: 2rem;
+	font-size: 20px;
+	text-align: center;
 }
+
+.은시7메뉴 ul{
+	padding-top: 200px;
+}
+
+.은시7메뉴 li{
+	line-height: 250%;
+}
+
 .nosmokecontent1 span , .bottomtitle3{
 	font-size: 2rem; 
 	color:#a2ffa2;

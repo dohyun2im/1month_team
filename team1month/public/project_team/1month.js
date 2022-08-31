@@ -102,4 +102,9 @@ img8.addEventListener('click' , () =>{
 img10.addEventListener('click' , () =>{
 	window.scrollTo({top:header, behavior:'smooth'});
 	img9.style.color = "#8e7055";
+	img10.style.borderColor = "#8e7055";
 })
+
+
+
+
