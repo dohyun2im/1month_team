@@ -43,24 +43,25 @@ section , header , footer{
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-
 header{
-	background-image: url("../img/main.png");
+   background-image: url("../img/header.jpg");
 }
 header h1{
-	font-size: 15rem;
-	text-align: center;
-	color: #996b5c;
-	margin: 0 0 5rem 0;}	
+   font-size: 7rem;
+   text-align: center;
+   color:ghostwhite;
+   margin: 0 15px 5rem 10px;
+   padding-top: 90px;}   
 .circle{display: flex;
-		width:100%;
-		justify-content: space-around;}
+      width:100%;
+      justify-content: space-evenly;
+      padding-top: 35rem;}
 .circle_img{display: flex;
-			flex-direction: column;}	
+         flex-direction: column;}   
 .circle img{border-radius: 50%;
-			width: 8rem;
-			height: 8rem;
-			border: 0.5rem solid #996b5c;}
+         width: 8rem;
+         height: 8rem;
+         border: 5px double  #ccc3b9;}
 .circle_img h6{color:white;}
 .title{display: flex; color:white; justify-content:space-around;}
 .title h6{position: relative;}
@@ -70,30 +71,160 @@ header h1{
 .stay{left: -3rem;}
 .haha{left: -2rem;}
 .hwa{left: -1rem;}
-/*기본--------------------------------------------------------------*/
-p{font-size: 20px; font-weight: bold; line-height: 60px;}
-/*seven.qntks-------------------------------------------*/
-.qntks {
-    display: flex;
-    justify-content: center;
-    background-color: antiquewhite;
-    width: 100%;
+/*은시7--------------------------------------------------------------*/
+.seven{
+   background-color: white;
+   text-align: center;
+   position: relative;
+   font-size: 20px;
 }
-.Qkd{width: 30vw; height: auto; margin: auto;}
 
-.zjvl{
-	width: 30vw; height:auto; padding: 5px; 
-	 margin: auto; }
-	
-p{font-size: 20px; font-weight: bold;}
+.seven_imgbox{
+   text-align: right;
+   padding-top: 200px;
+   position: relative;
+   
+}
 
-.fkdnswl{ color: #432614; }
+.seven_imgbox h2{
+   position: absolute;
+   top: 150px;
+   font-size: 100px;
+   -webkit-text-stroke: 1px #db0215;
+   color: white;
+}
 
-/*eight.tjdqnr-------------------------------------------*/
-.tjdqnr{
-	display: flex; justify-content: center; background-color: #55565e;
-	height: 45vw;}
+.seven_imgbox h2:hover{
+   color: #db0215;
+   -webkit-text-stroke: #e0b0ad;
+}
 
+.seven_imgbox p{
+   position: absolute;
+   top: 200px;
+   color: #ffd806;      /* 왜 글씨에는 안먹고 하트에만 먹히지? 복붙해와서 그런가 */
+   text-align: left;
+}
+
+
+.seven_img1{
+   border-radius: 50% 0 0 50%;
+   z-index: 1;
+   position: absolute;
+   left: 400px;
+}
+
+.seven_img2{
+   z-index: 2;
+   padding-right: 20px;
+   border-left: solid 8px white;
+}
+
+.seven_textbox{
+   position: absolute;
+   top: 300px;
+   text-align: left;
+}
+
+.two_textbox p{
+   line-height: 180%;
+   font-size: 16px;
+}
+
+.seven_textbox ul{
+   padding-top: 20px;
+   line-height: 200%;
+}
+
+.map7{
+   width: 300px;
+   height: 140px;
+   background-image: url("../img/위치_배경.jpg");
+   box-shadow: 0 0 0 2px #dccbc5;
+}
+
+.map7 p{
+   padding-top: 30px;
+   text-align: center;
+   vertical-align: middle;
+}
+/*은시8--------------------------------------------------------------*/
+.eight{
+   background-color: white;
+   text-align: center;
+   position: relative;
+   font-size: 20px;
+}
+
+.eight_imgbox{
+   text-align: right;
+   padding-top: 200px;
+   position: relative;
+   
+}
+
+.eight_imgbox h2{
+   position: absolute;
+   top: 150px;
+   font-size: 100px;
+   -webkit-text-stroke: 1px #db0215;
+   color: white;
+}
+
+.eight_imgbox h2:hover{
+   color: #db0215;
+   -webkit-text-stroke: #e0b0ad;
+}
+
+.eight_imgbox p{
+   position: absolute;
+   top: 200px;
+   color: #ffd806;      /* 왜 글씨에는 안먹고 하트에만 먹히지? 복붙해와서 그런가 */
+   text-align: left;
+}
+
+
+.eight_img1{
+   border-radius: 50% 0 0 50%;
+   z-index: 1;
+   position: absolute;
+   left: 400px;
+}
+
+.eight_img2{
+   z-index: 2;
+   padding-right: 20px;
+   border-left: solid 8px white;
+}
+
+.eight_textbox{
+   position: absolute;
+   top: 300px;
+   text-align: left;
+}
+
+.eight_textbox p{
+   line-height: 180%;
+   font-size: 16px;
+}
+
+.eight_textbox ul{
+   padding-top: 20px;
+   line-height: 200%;
+}
+
+.map8{
+   width: 300px;
+   height: 140px;
+   background-image: url("../img/위치_배경.jpg");
+   box-shadow: 0 0 0 2px #dccbc5;
+}
+
+.map8 p{
+   padding-top: 30px;
+   text-align: center;
+   vertical-align: middle;
+}
 
 /*-------------------------------------------------------------*/
 footer{
