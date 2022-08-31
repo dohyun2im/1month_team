@@ -87,16 +87,188 @@ header h1{
 	-webkit-text-stroke: 3px #996b5c;
 	
 }
+#effect:hover{
+  transform: scale(1.1);         /*확대되는 정도*/
+  transition: transform 0.2s;      /*구현되는 시간*/
+  filter: brightness(80%);         /*검은거 투명도*/
+}
+/*은시7--------------------------------------------------------------*/
+.seven{
+   background-color: white;
+   text-align: center;
+   position: relative;
+   font-size: 20px;
+}
+
+.seven_imgbox{
+   text-align: right;
+   padding-top: 200px;
+   position: relative;
+   
+}
+
+.seven_imgbox h2{
+   position: absolute;
+   top: 150px;
+   font-size: 100px;
+   -webkit-text-stroke: 1px #db0215;
+   color: white;
+}
+
+.seven_imgbox h2:hover{
+   color: #db0215;
+   -webkit-text-stroke: #e0b0ad;
+}
+
+.seven_imgbox p{
+   position: absolute;
+   top: 200px;
+   color: #ffd806;      /* 왜 글씨에는 안먹고 하트에만 먹히지? 복붙해와서 그런가 */
+   text-align: left;
+}
 
 
+.seven_img1{
+   border-radius: 50% 0 0 50%;
+   z-index: 1;
+   position: absolute;
+   left: 400px;
+}
+
+.seven_img2{
+   z-index: 2;
+   padding-right: 20px;
+   border-left: solid 8px white;
+}
+
+.seven_textbox{
+   position: absolute;
+   top: 300px;
+   text-align: left;
+}
+
+.two_textbox p{
+   line-height: 180%;
+   font-size: 16px;
+}
+
+.seven_textbox ul{
+   padding-top: 20px;
+   line-height: 200%;
+}
+.seven_menu1:hover{
+   -webkit-text-stroke: 1px black;
+}
+
+.seven_menu2:hover{
+   -webkit-text-stroke: 1px black;
+}
+
+.seven_menu3:hover{
+   -webkit-text-stroke: 1px black;
+}
+
+.map7{
+   width: 300px;
+   height: 140px;
+   background-image: url("../img/위치_배경.jpg");
+   box-shadow: 0 0 0 2px #dccbc5;
+}
+
+.map7 p{
+   padding-top: 30px;
+   text-align: center;
+   vertical-align: middle;
+}
+
+/*은시8--------------------------------------------------------------*/
+.eight{
+   background-color: white;
+   text-align: center;
+   position: relative;
+   font-size: 20px;
+}
+
+.eight_imgbox{
+   text-align: right;
+   padding-top: 200px;
+   position: relative;
+   
+}
+
+.eight_imgbox h2{
+   position: absolute;
+   top: 150px;
+   font-size: 100px;
+   -webkit-text-stroke: 1px #db0215;
+   color: white;
+}
+
+.eight_imgbox h2:hover{
+   color: #db0215;
+   -webkit-text-stroke: #e0b0ad;
+}
+
+.eight_imgbox p{
+   position: absolute;
+   top: 200px;
+   color: #ffd806;      /* 왜 글씨에는 안먹고 하트에만 먹히지? 복붙해와서 그런가 */
+   text-align: left;
+}
 
 
+.eight_img1{
+   border-radius: 50% 0 0 50%;
+   z-index: 1;
+   position: absolute;
+   left: 400px;
+}
 
+.eight_img2{
+   z-index: 2;
+   padding-right: 20px;
+   border-left: solid 8px white;
+}
 
+.eight_textbox{
+   position: absolute;
+   top: 300px;
+   text-align: left;
+}
 
+.eight_textbox p{
+   line-height: 180%;
+   font-size: 16px;
+}
 
+.eight_textbox ul{
+   padding-top: 20px;
+   line-height: 200%;
+}
+.eight_menu1:hover{
+   -webkit-text-stroke: 1px black;
+}
 
+.eight_menu2:hover{
+   -webkit-text-stroke: 1px black;
+}
 
+.eight_menu3:hover{
+   -webkit-text-stroke: 1px black;
+}
+.map8{
+   width: 300px;
+   height: 140px;
+   background-image: url("../img/위치_배경.jpg");
+   box-shadow: 0 0 0 2px #dccbc5;
+}
+
+.map8 p{
+   padding-top: 30px;
+   text-align: center;
+   vertical-align: middle;
+}
+/*-------------------------------------------------------------*/
 
 /*------------footer---------------------------------------*/
 .fa-twitter{color:#1c9cea;}
