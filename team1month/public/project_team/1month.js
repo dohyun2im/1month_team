@@ -17,7 +17,7 @@ let img6 = document.querySelector("#img6")
 let img7 = document.querySelector("#img7")
 let img8 = document.querySelector("#img8")
 let img9 = document.querySelector("#main")
-let img10 = document.querySelector("#back")
+let img10 = document.querySelectorAll(".back")
 
 img1.addEventListener('click' , () =>{
 	window.scrollTo({top:sec1, behavior:'smooth'});
