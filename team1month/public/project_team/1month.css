@@ -1,14 +1,23 @@
 @charset "UTF-8";
-
+.back{
+	background-color:#f5c181;
+	padding: 1rem;
+	border-radius: 70%;
+	border:0.5px solid #996b5c;
+	font-weight: bold;
+	position:absolute;
+	bottom: 10vh; 
+	right: 0vw;
+}
 .allcontainer{
 	height: 100vh;
 	scroll-snap-type: y mandatory;
 }
 header{scroll-snap-align:start;}
-section{scroll-snap-align:center;}
+section{scroll-snap-align:center; position: relative;}
 footer{scroll-snap-align:end;}
 section , header , footer{
-	width:1400px;
+	width:1200px;
 	margin:0 auto;
 	height: 101vh;
 	background-size: cover;
@@ -17,31 +26,67 @@ section , header , footer{
 }
 
 header{
-	background-image: url("../img/main.png");
+	background-image: url("../img/헤더배경.jpg");
 }
 header h1{
 	font-size: 15rem;
 	text-align: center;
-	color: #996b5c;
-	margin: 0 0 5rem 0;}	
+	color:white;
+	margin: 0rem 0 12rem 0;
+	}	
+	
 .circle{display: flex;
 		width:100%;
 		justify-content: space-around;}
+		
 .circle_img{display: flex;
-			flex-direction: column;}	
+			flex-direction: column;
+			text-align: center;
+			width:10%;}	
+			
 .circle img{border-radius: 50%;
 			width: 8rem;
 			height: 8rem;
-			border: 0.5rem solid #996b5c;}
-.circle_img h6{color:white;}
+			border: 0.5rem solid #c1e4f7;
+			}
+.circle_img h6{color:white; font-size: 0.65rem;}
 .title{display: flex; color:white; justify-content:space-around;}
 .title h6{position: relative;}
-.camel{left: 0.5rem;}
-.fire{left: -1.5rem;}
-.over{left: -3.5rem;}
-.stay{left: -3rem;}
-.haha{left: -2rem;}
-.hwa{left: -1rem;}
+
+/*-------------header--------------------------------------*/
+
+.memo{
+	padding:1rem;
+	width:20vw;
+	height:50vh;
+	position:absolute;
+	top:11vh;
+	right:0vw;
+	background-image: url("../img/메모지.webp");
+	background-position: center;
+	border-radius: 3%;
+	}
+.memo li{padding: 0.4rem; color: white; font-weight: bold;}
+.memo h2{
+	font-size:2rem;
+	font-weight:bold;
+	color:#f5c181; 
+	font-weight: bold;
+	padding: 1rem 0 0.7rem 0;
+	-webkit-text-stroke: 1px #996b5c;
+}
+.camelimgs , .bottommenu{display: flex;}
+.camelimg{width:20vw; height: 50vh; padding: 0.3rem;}
+.camel2{border-radius: 0 50% 50% 0;}
+.camel3{border-radius: 10% ; width:20vw; height:30vh;}
+.cameltitle{
+	font-size: 5rem; 
+	color:#f5c181;
+	font-weight: bold;
+	padding: 0.5rem;
+	-webkit-text-stroke: 3px #996b5c;
+	
+}
 
 
 
@@ -53,11 +98,7 @@ header h1{
 
 
 
-
-
-
-
-
+/*------------footer---------------------------------------*/
 .fa-twitter{color:#1c9cea;}
 .fa-facebook{color:#1773ea;}
 .fa-youtube{color:#f31c1b;}

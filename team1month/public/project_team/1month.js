@@ -21,45 +21,45 @@ let img10 = document.querySelector("#back")
 
 img1.addEventListener('click' , () =>{
 	window.scrollTo({top:sec1, behavior:'smooth'});
-	img1.style.borderColor = "#f5c181";
+	img1.style.borderColor = "#8e7055";
 })
 
 img2.addEventListener('click' , () =>{
 	window.scrollTo({top:sec2, behavior:'smooth'});
-	img2.style.borderColor = "#f5c181";
+	img2.style.borderColor = "#8e7055";
 })
 
 img3.addEventListener('click' , () =>{
 	window.scrollTo({top:sec3, behavior:'smooth'});
-	img3.style.borderColor = "#f5c181";
+	img3.style.borderColor = "#8e7055";
 })
 
 img4.addEventListener('click' , () =>{
 	window.scrollTo({top:sec4, behavior:'smooth'});
-	img4.style.borderColor = "#f5c181";
+	img4.style.borderColor = "#8e7055";
 })
 
 img5.addEventListener('click' , () =>{
 	window.scrollTo({top:sec5, behavior:'smooth'});
-	img5.style.borderColor = "#f5c181";
+	img5.style.borderColor = "#8e7055";
 })
 
 img6.addEventListener('click' , () =>{
 	window.scrollTo({top:sec6, behavior:'smooth'});
-	img6.style.borderColor = "#f5c181";
+	img6.style.borderColor = "#8e7055";
 })
 
 img7.addEventListener('click' , () =>{
 	window.scrollTo({top:sec7, behavior:'smooth'});
-	img7.style.borderColor = "#f5c181";
+	img7.style.borderColor = "#8e7055";
 })
 
 img8.addEventListener('click' , () =>{
 	window.scrollTo({top:sec8, behavior:'smooth'});
-	img8.style.borderColor = "#f5c181";
+	img8.style.borderColor = "#8e7055";
 })
 
 img10.addEventListener('click' , () =>{
 	window.scrollTo({top:header, behavior:'smooth'});
-	img9.style.Color = "#f5c181";
+	img9.style.color = "#8e7055";
 })
