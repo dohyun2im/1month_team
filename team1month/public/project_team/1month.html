@@ -7,9 +7,20 @@
 	<link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
 	<script src="https://kit.fontawesome.com/e128842485.js" crossorigin="anonymous"></script>
 	<link href="1month.css" rel="stylesheet">
+	<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
 </head>
 <body>
-<button id="back1">Home<i class="fa-solid fa-house"></i></button>
+
+ <button id="btnmodal" style="display: none;" type="button"
+      class="btn btn-primary" data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"></button>
+      
+<button id="back1"><img src="../img/하트.png" width=150px height=140px></button>
+
 <div class="allcontainer">
 	<header>
 		<h1 id="main">1Day , 1Coffee </h1>
@@ -94,7 +105,7 @@
 	<section class="three">
 	<div class="memo1">
 		<h2 id="imhover">Menu</h2>
-		<ul>
+		<ul id="imhover2">
 			<li>Camel Coffee 5.5</li>
 			<li>Americano 5.5</li>
 			<li>Latte 6.0</li>
@@ -104,23 +115,21 @@
 			<li>Espresso 3.5</li>
 			<li>Conpanna 4.5</li>
 		</ul>
-		
-		
-		<h2 id="imhover">Lastorder 20:30</h2>
-		
+		<h2 id="imhover">Lastorder 20:30</h2>	
 	</div>
+	
 	<h1 id="imhover" class="cameltitle">Camel Coffee</h1>
 	<div class='camelimgs'>
-	<img  id="effect" class="camelimg camel1" src="../img/camel2.jpg">
-	<img  id="effect" class="camelimg camel2" src="../img/camel1.webp">
+	<img id="effect" class="camelimg camel1" src="../img/camel2.jpg">
+	<img id="effect" class="camelimg camel2" src="../img/camel1.webp">
 	</div>
 	
 	
 	<div class="bottommenu">
-		<img id="imghover" class="camelmap" src="../img/camelw.png">
+		<img id="imghover" class="camelmap" src="../img/camelw.PNG">
 		<div class="bottomdiv">
 			<h2 id="imhover" class="bottomtitle">압구정 아인슈페너가 맛있는 집</h2>
-			<ul class="bottomlist">
+			<ul id="imhover2" class="bottomlist">
 				<li>-  서울 강남구 도산대로45길 16-8</li>
 				<li>-  010-7774-1484</li>
 				<li>-  웨이팅 시 가게 앞 대기</li>
@@ -159,35 +168,121 @@
 		</div>
 	</section>
 	
-	<section class="five"></section>
-	<section class="six"></section>
-	<section class="seven">
-		<div class="seven_imgbox">
-			   <h2>hahafarmstay</h2>
-			      <img id="effect" class="seven_img1" alt="" src="../img/양양.jpg" width="400px" height="400px">
-			      <img id="effect" class="seven_img2" alt="" src="../img/양양2.jpg" width="400px" height="400px">
+	<section class="five">
+			<div class="imgbox">
+				<h2 class="fiveh2">overfilled_coffee</h2>
+				<img onclick="imgmodal( 5 ,0)" class="five_img1" alt=""
+					src="../img/오버필 빵1.jpg" width="500px" height="500px"> <img
+					onclick="imgmodal( 5 ,1 )" class="six_img2" alt=""
+					src="../img/오버필 배경 (2).jpg" width="500px" height="500px">
+				<div class="imgbox2"
+					style="display: flex; flex-direction: row-reverse; margin: 20px">
+					<img style="margin-left: 30px" onclick="imgmodal( 5 ,2)" class=""
+						alt="" src="../img/오버필 빵2.jpg" width="100px"> <img
+						style="margin-left: 30px" onclick="imgmodal( 5 ,3)" class="" alt=""
+						src="../img/오버필 외관.jpg" width="100px"> <img
+						style="margin-left: 30px" onclick="imgmodal( 5, 4 )" class="" alt=""
+						src="../img/오버필 실내1.jpg" width="100px"> <img
+						style="margin-left: 30px" onclick="imgmodal( 5 ,5)" class="" alt=""
+						src="../img/오버필 약도 .jpg" width="100px">
+				</div>
+
+				<div class="five_textbox">
+					<p>
+						입구부터 느껴지는 <br>힙하고 시크한 감성카페 <br> 모던한 인테리어로 힙스터들의 아지트＆
+					</p>
+					<div class="fivemap">
+						<p>
+							주소 : 서울특별시 은평구 연서로 29길 17-3 1층<br> 매일 11:00~22:00 월요일 정기휴무<br>
+							<br>
+						</p>
+					</div>
+					<ul>
+						
+						<li>📋 추천 🅼🅴🅽🆄 📋</li>
+						<li class="five메뉴1">👉아인슈페너 5.0👈</li>
+						<li class="five메뉴1">👉카라멜 크림 6.0👈</li>
+						<li class="five메뉴1">👉잠봉프레즐 9.0👈</li>
+						<li class="five메뉴1">👉잠봉뵈르 9.0👈</li>
+
+						</p>
+					</ul>
+				</div>
+		</section>
+
+		<section class="six">
+			
+			<div class="imgbox">
+				<h2 class="sixh2">Forestay</h2>
+				
+				<img onclick="imgmodal( 6 , 0 )" class="five_img1" alt=""
+					src="../img/forest.jpg" width="500px" height="500px"> <img
+					onclick="imgmodal( 6 , 1 )" class="six_img2" alt=""
+					src="../img/forest2.jpg" width="500px" height="500px">
+				
+				<div class="imgbox2"
+					style="display: flex; flex-direction: row-reverse; margin: 20px 20px">
+					<img style="margin-left: 36px" onclick="imgmodal( 6, 2 )" class=""
+						alt="" src="../img/forest3.jpg" width="100px"> <img
+						style="margin-left: 36px" onclick="imgmodal( 6, 3 )" class="" alt=""
+						src="../img/forest4.jpg" width="100px"> <img
+						style="margin-left: 36px" onclick="imgmodal( 6, 4 )" class="" alt=""
+						src="../img/forest5.jpg" width="100px"> <img
+						style="margin-left: 36px" onclick="imgmodal( 6, 5 )" class="" alt=""
+						src="../img/포레스트 약도.jpg" width="100px">
+				</div>
 			</div>
-			<div class="seven_textbox">
-			  <p>
-			   ☘hahafarmstay☘<br>
-			   향긋한 봄향기 가득한 팜크닉
-			  </p>
-			  <div class="map7">
-			   <p>
-			   주소 : 강원 양양군 현남면 임호정길 110-24<br>
-			   월 목 금 토 일 : 10:00 ~ 19:00<br>
-			   매주 화/목 정기휴무
-			   <br>
-			   </p>
-			  </div>
-			   <ul>
-			      <li>📋 추천 메뉴 📋</li>
-			      <li class="seven_menu1"> 코코넛연라떼 7.0<li>
-			      <li class="seven_menu2"> 티코스_선 30.6</li>
-			      <li class="seven_menu3"> 티코스_빛 30.0</li>
-			   </ul>
-			 </div>
+
+			<div class="six_textbox">
+				<p>
+					캠핑컨셉으로 꾸며진 카페<br> 에메랄드빛 수영장과 내장산 포레스트<br>뷰를 감상 가능합니다🍀
+				</p>
+				<div class="sixmap">
+					<p>
+						주소 : 전북 정읍시 서당길 14 1동 1층<br> 매일 09:00~19:00 <br>주차가능 <br>
+					</p>
+				</div>
+				<ul>
+					<li>📋 추천 🅼🅴🅽🆄 📋</li>
+					<li class="six메뉴1">👉상하목장 아포가토 8.0👈
+					<li>
+					<li class="six메뉴2">👉상하목장 우유 아이스크림 6.0👈</li>
+					<li class="six메뉴3">👉애플 유자민트 8.0👈</li>
+
+					</p>
+				</ul>
+			</div>
+		</section>
+	
+	
+	
+	<section class="seven">
+		<h1 id="imhover1" class="notitle notitle1">HaHafarmstay</h1>
+		<div class="noimgs">
+			<img  id="effect" class="noimg noimg1" src="../img/양양.jpg">
+			<img  id="effect" class="noimg noimg2" src="../img/양양2.jpg">
+			<p class="nosmokecontent nosmokecontent1">
+			<span id="imhover"> 추천 메뉴 📋</span><br><br>
+			코코넛 연라떼 7.0<br><br>
+			티코스_선 30.0<br><br>
+			티코스_빛 30.0<br><br>
+			</p>
+		</div>
+		<div class="bottommap">
+			<img id="imghover" class="nosmokemap" src="../img/hahamap.png">
+			<div class="bottomdiv">
+				<h2 id="imhover" class="bottomtitle3">향긋한 봄향기 가득한 팜크닉</h2>
+				<ul class="bottomlist">
+					<li>주소 : 강원 양양군 현남면 임호정길 110-24</li>
+						<li>월 목 금 토 일 : 10:00 ~ 19:00</li>
+						<li>매주 화/목 정기휴무</li>
+				</ul>
+			</div>
+		</div>
 	</section>
+	
+	
+	
 	<section class="eight">
 		<div class="eight_imgbox">
 			   <h2>onhwa</h2>
@@ -196,25 +291,59 @@
 			</div>
 			<div class="eight_textbox">
 			  <p>
-			   💟onhwa💟<br>
 			   수요미식회에 나온 디저트맛집
 			  </p>
 			  <div class="map8">
 			   <p>
 			   주소 : 인천 중구 은하수로 10 더테라스프라자 3층<br>
 			   매일 10:00-22:00 영업<br>
-			   <br>
 			   </p>
 			  </div>
-			   <ul>
+			  <div class="은시메뉴">
+			  	<ul>
 			      <li>📋 추천 메뉴 📋</li>
-			      <li class="eight_menu1"> 딸기수플레 19.0<li>
-			      <li class="eight_menu2"> 바스크치즈케이크 13.0</li>
-			      <li class="eight_menu3"> 생딸기 3종음료 7.0</li>
+			      <li class="메뉴1"> 딸기수플레 19.0<li>
+			      <li class="메뉴2"> 바스크치즈케이크 13.0</li>
+			      <li class="메뉴3"> 생딸기 3종음료 7.0</li>
 			   </ul>
+			  </div>
+
 			 </div>
 	</section>
 	
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+			data-bs-keyboard="false" tabindex="-1"
+			aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel">1Day_1Cafe</h5>
+						<!-- 제목 -->
+						<button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button>
+						<!-- x 버튼 -->
+					</div>
+					<div class="modal-body">
+
+						<div id="carouselExampleControls" class="carousel slide"
+							data-bs-ride="carousel">
+							<div class="carousel-inner"></div>
+							<button class="carousel-control-prev" type="button"
+								data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button"
+								data-bs-target="#carouselExampleControls" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 	<footer>
 		<ul class = 'footer_nav'>
 			<li><i class="fa-brands fa-twitter"></i><a href="https://twitter.com">Twitter</a></li>
@@ -227,6 +356,10 @@
 	</footer>
 </div>
 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+   <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+         crossorigin="anonymous"></script>
 	<script src="1month.js"></script>
 </body>
 </html>
